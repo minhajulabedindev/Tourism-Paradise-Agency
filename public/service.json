@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Adventure Tourism Package    ",
+    "img": "https://image.freepik.com/free-photo/taking-path-mountains_1098-12856.jpg",
+    "discription": "Adventure tourism, in general, is defined as the type of tourism that encourages an individual to come out of his/her comfort zone by engaging in thrilling physical, natural or cultural activities."
+  },
+  {
+    "id": 2,
+    "name": " Wildlife Tourism Package",
+    "img": "https://img.freepik.com/free-photo/closeup-shot-cute-elephant-walking-dry-grass-wilderness_181624-25714.jpg?size=338&ext=jpg",
+    "discription": "India has a rich and diverse wildlife. From the mammoth mountain ranges in the north to the tip of Kanyakumari in the south, India is the home of a large number of wildlife parks and sanctuaries"
+  },
+  {
+    "id": 3,
+    "name": " Pilgrimage Tourism Package",
+    "img": "https://image.freepik.com/free-vector/people-with-medical-mask-hajj-pilgrimage-illustration_23-2148966963.jpg",
+    "discription": "The major reason that attracts tourists to India is the traditional temple architecture, art forms and rituals performed. Varanasi is the major hub for all the devotees to explore the Hindu history  "
+  },
+  {
+    "id": 4,
+    "name": "Eco Tourism Package",
+    "img": "https://image.freepik.com/free-photo/rear-view-young-man-with-backpack-traveling_329181-19210.jpg",
+    "discription": "Eco tourism has now become one of the most fascinating travel forms that has emerged these days. Eco tourism allows the tourist to experience the wonders and beauty of the underdeveloped, natural and culturally sensitive"
+  },
+
+  {
+    "id": 5,
+    "name": " Cruise Tourism Package",
+    "img": "https://image.freepik.com/free-photo/sun-moon-lake-sunrise-nantou-taiwan_335224-600.jpg",
+    "discription": "Cruise tourism permits tourists to explore beautiful riverside villages, undisturbed sacred islands and sights that will captivate and intrigue their senses "
+  },
+  {
+    "id": 6,
+    "name": "Family Tourism Package    ",
+    "img": "https://image.freepik.com/free-photo/camping-with-family-happy-family-with-spending-time-outdoor-autumn-park_1150-37800.jpg",
+    "discription": "The family tourism in India offers all kind of activities like visiting the cultural destinations, a cruise ride, enjoying the scenic beauty of eco tourism places, experiencing the wildlife and getting high on adventure"
+  },
+  {
+    "id": 7,
+    "name": "Honeymoon Tourism Package",
+    "img": "https://image.freepik.com/free-photo/happy-beautiful-adult-couple-sitting-side-yacht-watching-seaside-hugging-while-vacation-tan-might-fade-such-memories-you-share-with-one-you-love-last-forever_176420-15404.jpg",
+    "discription": " Everyone couple dreams about escaping from the rest of the world to have a romantic vacation with their partner. Honeymoon is a once in a lifetime opportunity to have fun, to get to know each other more and have   "
+  },
+  {
+    "id": 8,
+    "name": "Middle East package",
+    "img": "https://image.freepik.com/free-photo/dubai-skyline-downtown-skyscrapers-sunset-modern-architecture-concept-with-highrise-buildings-world-famous-metropolis-united-arab-emirates_231208-7629.jpg",
+    "discription": "The Middle East is a geopolitical term that commonly refers to the region spanning the Levant, Arabian Peninsula, Anatolia Egypt, Iran and Iraq.Middle East, the lands around the southern and eastern "
+  },
+  {
+    "id": 9,
+    "name": "Western countries Package",
+    "img": "https://image.freepik.com/free-photo/statue-liberty-new-york-city-skyline-usa_268835-777.jpg",
+    "discription": "o Europeans, the Western world used to be a literal geographical term, separating Europe from the Middle East, South Asia, Southeast Asia, North Africa, and the Far East. This is no longer used as a primary definition since Australia and New Zealand geographically in th"
+  }
+]
