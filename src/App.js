@@ -13,6 +13,8 @@ import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 import Success from "./Component/Success/Success";
 import Details from "./Component/Details/Details";
 import Footer from "./Component/Shared/Footer/Footer";
+import AddService from "./Component/AddService/AddService";
+import Offer from "./Component/Home/Offer/Offer";
 
 function App() {
   return (
@@ -32,10 +34,18 @@ function App() {
             </Route>
             <Route path="/service">
               <Service></Service>
+              <div className="container">
+                <Offer></Offer>
+              </div>
             </Route>
-            <PrivateRoute path="/booking">
+            <Route path="/addService">
+              <AddService></AddService>
+            </Route>
+
+            <PrivateRoute path="/booking/:id">
               <MyBooking></MyBooking>
             </PrivateRoute>
+
             <PrivateRoute path="/success">
               <Success></Success>
             </PrivateRoute>

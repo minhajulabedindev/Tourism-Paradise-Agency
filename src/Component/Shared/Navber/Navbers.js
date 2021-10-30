@@ -11,8 +11,9 @@ const Navbers = () => {
     return logOut;
   };
   return (
-    <div>
-      <Navbar sticky="top" expand="lg" bg="light" variant="">
+    <div className="sticky-top">
+      {/* ========================= */}
+      <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -22,11 +23,8 @@ const Navbers = () => {
               alt=""
             />
           </Navbar.Brand>
-          <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
-            className="text-dark"
-          />
-          <Navbar.Collapse id="responsive-navbar-nav" className="text-dark">
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto">
               <h5>{user.displayName}</h5>
             </Nav>
@@ -37,8 +35,11 @@ const Navbers = () => {
               <Nav.Link as={Link} to="/service">
                 Service
               </Nav.Link>
-              <Nav.Link as={Link} to="/booking">
+              <Nav.Link as={Link} to="/booking/:id">
                 My Booking
+              </Nav.Link>
+              <Nav.Link as={Link} to="/addService">
+                Add Service
               </Nav.Link>
               {user.email ? (
                 <Button

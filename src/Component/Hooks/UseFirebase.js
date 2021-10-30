@@ -16,11 +16,14 @@ const UseFirebase = () => {
   const [isLoading, setLoading] = useState(true);
   const auth = getAuth();
 
+  //----------sign in with google---------------------
   const signWithGoogle = () => {
     return signInWithPopup(auth, googleProvider).finally(() => {
       setLoading(false);
     });
   };
+
+  //----------sign out with google---------------------
 
   const logOut = () => {
     setLoading(true);
@@ -31,7 +34,7 @@ const UseFirebase = () => {
       .finally(() => setLoading(false));
   };
 
-  //---------------------------------------------------
+  //-------------------- useEffect part -------------------------------
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -43,6 +46,7 @@ const UseFirebase = () => {
     });
     return () => unsubscribe;
   }, []);
+
   return {
     isLoading,
     user,

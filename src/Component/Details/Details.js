@@ -13,7 +13,6 @@ const Details = () => {
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
-  console.log(details);
 
   const handlebtn = () => {
     history.push("/success");
@@ -27,10 +26,6 @@ const Details = () => {
 
         <Button onClick={handlebtn}>Package Booking</Button>
       </div>
-      {/* {details.map((detail) => (
-        <Detail key={detail} detail={detail}></Detail>
-      ))}
-      {} */}
     </>
   );
 };

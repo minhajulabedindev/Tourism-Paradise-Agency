@@ -11,7 +11,7 @@ const Offer = () => {
   }, []);
   return (
     <div className="my-5">
-      <h1>Choose Your Favorite Package</h1>
+      <h1 className="textse ">Choose Your Favorite Package</h1>
 
       <div className="row my-lg-5">
         {offers.map((offer) => (

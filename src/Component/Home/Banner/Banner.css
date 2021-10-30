@@ -17,3 +17,35 @@
   text-shadow: 0px 8px 10px rgb(61, 57, 57);
   font-size: 50px;
 }
+.textse {
+  color: rgba(36, 6, 6, 0.986);
+  text-align: center;
+  text-shadow: 0px 3px 8px rgb(61, 57, 57);
+  /* font-size: 50px; */
+}
+.inner {
+  overflow: hidden;
+}
+.inner img {
+  transition: all 0.8s ease-in;
+}
+.inner:hover img {
+  transform: scale(1.5);
+}
+.hov:hover {
+  background-color: rgba(167, 167, 167, 0.137);
+  transition: 1.5s;
+  border-radius: 50px;
+}
+.bgImgAdd {
+  background-image: url(../../../Images/bg/bg-2.jpg);
+
+  /* Full height */
+  height: 80vh;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* backface-visibility: hidden; */
+}
