@@ -35,7 +35,7 @@ const Navbers = () => {
               <Nav.Link as={Link} to="/service">
                 Service
               </Nav.Link>
-              <Nav.Link as={Link} to="/booking/:id">
+              <Nav.Link as={Link} to="/booking">
                 My Booking
               </Nav.Link>
               <Nav.Link as={Link} to="/addService">

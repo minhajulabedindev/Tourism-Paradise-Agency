@@ -15,6 +15,7 @@ import Details from "./Component/Details/Details";
 import Footer from "./Component/Shared/Footer/Footer";
 import AddService from "./Component/AddService/AddService";
 import Offer from "./Component/Home/Offer/Offer";
+import Booking from "./Component/Booking/Booking";
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
             <Route path="/addService">
               <AddService></AddService>
             </Route>
+
+            <PrivateRoute exact path="/booking">
+              <Booking></Booking>
+            </PrivateRoute>
 
             <PrivateRoute path="/booking/:id">
               <MyBooking></MyBooking>

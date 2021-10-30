@@ -5,7 +5,7 @@ import useAuth from "../Hooks/UseAuth";
 import UseFirebase from "../Hooks/UseFirebase";
 
 const Login = () => {
-  const { signWithGoogle, user, setUser, logOut, isLoading } = useAuth();
+  const { signWithGoogle } = useAuth();
   const history = useHistory();
   const location = useLocation();
   const url = location.state?.from || "/home";

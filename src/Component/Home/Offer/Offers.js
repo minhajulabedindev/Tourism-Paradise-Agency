@@ -8,27 +8,15 @@ const Offers = (props) => {
   const history = useHistory();
   const histor = useHistory();
   const [booking, setBooking] = useState();
-  const handlebtn = (data) => {
-    console.log(_id);
-    // console.log(name);
-    axios
-      .post("http://localhost:5000/booking")
-      .then((res) => res)
-      .then((data) => setBooking(data));
 
-    // fetch(`http://localhost:5000/booking`, {
-    //   method: "post",
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    //   body: JSON.stringify(),
-    // },_id)
-    //   .then((res) => res.json())
-    //   .data((data) => {
-    //     setBooking(data);
-    //   });
+  const handleBookingBtn = () => {
+    axios.post("http://localhost:5000/booking", props.offer).then((res) => {
+      if (res.data.insertedId) {
+        alert("Successfully");
+      }
+    });
+    // history.push(`/booking/${_id}`);
   };
-
   const handleDetailsBtn = () => {
     history.push(`/details/${_id}`);
   };
@@ -45,10 +33,10 @@ const Offers = (props) => {
           Price: ${price}{" "}
           <span className="ms-2 text-warning ">{discount}% OFF</span>
         </h4>
-        <Button onClick={() => handleDetailsBtn(booking)} className="me-2 mt-2">
+        <Button onClick={handleDetailsBtn} className="me-2 mt-2">
           Details
         </Button>
-        <Button className=" mt-2" onClick={handlebtn}>
+        <Button className=" mt-2" onClick={handleBookingBtn}>
           Package Booking
         </Button>
       </div>
@@ -57,3 +45,24 @@ const Offers = (props) => {
 };
 
 export default Offers;
+
+//const handlebtn = (data) => {
+//   console.log(_id);
+//   // console.log(name);
+//   axios
+//     .post("http://localhost:5000/booking")
+//     .then((res) => res)
+//     .then((data) => setBooking(data));
+
+//   // fetch(`http://localhost:5000/booking`, {
+//   //   method: "post",
+//   //   headers: {
+//   //     "content-type": "application/json",
+//   //   },
+//   //   body: JSON.stringify(),
+//   // },_id)
+//   //   .then((res) => res.json())
+//   //   .data((data) => {
+//   //     setBooking(data);
+//   //   });
+// };
