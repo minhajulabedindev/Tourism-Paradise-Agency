@@ -6,12 +6,14 @@ import { useForm } from "react-hook-form";
 const AddService = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/offers", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://sheltered-beyond-20498.herokuapp.com/offers", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Successfully");
+          reset();
+        }
+      });
   };
   return (
     <div className="bgImgAdd ">

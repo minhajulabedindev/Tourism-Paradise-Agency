@@ -9,7 +9,7 @@ const Details = () => {
   const history = useHistory();
 
   useEffect(() => {
-    fetch(`https://sheltered-beyond-20498.herokuapp.com/offers/${id}`)
+    fetch(`http://localhost:5000/offers/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);

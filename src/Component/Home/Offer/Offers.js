@@ -10,11 +10,13 @@ const Offers = (props) => {
   const [booking, setBooking] = useState();
 
   const handleBookingBtn = () => {
-    axios.post("http://localhost:5000/booking", props.offer).then((res) => {
-      if (res.data.insertedId) {
-        alert("Successfully");
-      }
-    });
+    axios
+      .post("https://sheltered-beyond-20498.herokuapp.com/booking", props.offer)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Successfully");
+        }
+      });
     // history.push(`/booking/${_id}`);
   };
   const handleDetailsBtn = () => {
@@ -45,24 +47,3 @@ const Offers = (props) => {
 };
 
 export default Offers;
-
-//const handlebtn = (data) => {
-//   console.log(_id);
-//   // console.log(name);
-//   axios
-//     .post("http://localhost:5000/booking")
-//     .then((res) => res)
-//     .then((data) => setBooking(data));
-
-//   // fetch(`http://localhost:5000/booking`, {
-//   //   method: "post",
-//   //   headers: {
-//   //     "content-type": "application/json",
-//   //   },
-//   //   body: JSON.stringify(),
-//   // },_id)
-//   //   .then((res) => res.json())
-//   //   .data((data) => {
-//   //     setBooking(data);
-//   //   });
-// };

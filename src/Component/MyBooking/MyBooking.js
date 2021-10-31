@@ -16,6 +16,7 @@ const MyBooking = () => {
       .then((res) => res.json())
       .then((data) => setDetail(data));
   }, []);
+  //delete
 
   const handlebtn = () => {
     history.push("/success");
